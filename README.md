@@ -25,6 +25,7 @@
  
  Registeration Number : 212222220055
  ## MainActivity.java:
+ ```
 package com.example.workshop;
 
 import android.os.Bundle;
@@ -104,7 +105,9 @@ public class MainActivity extends AppCompatActivity {
         
     }
 }
+```
  ## MainActivity2.java:
+ ```
  package com.example.workshop;
  import android.content.Intent;
  import android.os.Bundle;
@@ -131,7 +134,9 @@ public class MainActivity extends AppCompatActivity {
         textViewContactNumber.setText("Contact Number: " + contactNumber);
     }
  }
+```
  ## activity_main.xml:
+ ```
  <?xml version="1.0" encoding="utf-8"?>
  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://
  schemas.android.com/apk/res/android"
@@ -188,7 +193,9 @@ public class MainActivity extends AppCompatActivity {
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextContactNumber" />
  </androidx.constraintlayout.widget.ConstraintLayout>
+```
  ## activity_second.xml:
+ ```
  <?xml version="1.0" encoding="utf-8"?>
  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://
  schemas.android.com/apk/res/android"
@@ -234,7 +241,9 @@ public class MainActivity extends AppCompatActivity {
         app:layout_constraintTop_toBottomOf="@id/textViewEmail"
         app:layout_constraintWidth_percent="0.8" />
  </androidx.constraintlayout.widget.ConstraintLayout>
+```
  ## AndroidManifest.xml:
+ ```
  <?xml version="1.0" encoding="utf-8"?>
  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
@@ -263,6 +272,7 @@ public class MainActivity extends AppCompatActivity {
     </application>
     
     </manifest>
+```
 ## Output:
 ![Screenshot 2024-10-24 103419](https://github.com/user-attachments/assets/f6229cc7-3db3-4b7d-b168-f7de44d86c6b)
 ![Screenshot 2024-10-24 103631](https://github.com/user-attachments/assets/9b75366e-2873-4493-9ac9-0d0d40d66e6e)
