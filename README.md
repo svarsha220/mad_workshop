@@ -25,18 +25,18 @@
  
  Registeration Number : 212222220055
  ## MainActivity.java:
- package com.example.workshop;
- import android.os.Bundle;
- import androidx.activity.EdgeToEdge;
- import androidx.appcompat.app.AppCompatActivity;
- import androidx.core.graphics.Insets;
-  import androidx.core.view.ViewCompat;
- import androidx.core.view.WindowInsetsCompat;
- import android.content.Intent;
- import android.view.View;
- import android.widget.Button;
- import android.widget.EditText;
- public class MainActivity extends AppCompatActivity {
+package com.example.workshop;
+import android.os.Bundle;
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+public class MainActivity extends AppCompatActivity {
     EditText editTextName, editTextAge, editTextEmail, editTextContactNumber;
     Button buttonSubmit;
     @Override
@@ -64,7 +64,7 @@
             }
         });
     }
- }
+}
  ## MainActivity2.java:
  package com.example.workshop;
  import android.content.Intent;
