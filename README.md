@@ -26,43 +26,82 @@
  Registeration Number : 212222220055
  ## MainActivity.java:
 package com.example.workshop;
+
 import android.os.Bundle;
+
 import androidx.activity.EdgeToEdge;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.core.graphics.Insets;
+
 import androidx.core.view.ViewCompat;
+
 import androidx.core.view.WindowInsetsCompat;
+
 import android.content.Intent;
+
+
 import android.view.View;
+
 import android.widget.Button;
+
 import android.widget.EditText;
+
 public class MainActivity extends AppCompatActivity {
+
     EditText editTextName, editTextAge, editTextEmail, editTextContactNumber;
+    
     Button buttonSubmit;
+    
     @Override
+    
     protected void onCreate(Bundle savedInstanceState) {
+    
         super.onCreate(savedInstanceState);
+        
         setContentView(R.layout.activity_main);
+        
         editTextName = findViewById(R.id.editTextName);
+        
         editTextAge = findViewById(R.id.editTextAge);
+        
         editTextEmail = findViewById(R.id.editTextEmail);
+        
         editTextContactNumber = findViewById(R.id.editTextContactNumber);
+        
         buttonSubmit = findViewById(R.id.buttonSubmit);
+        
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
+        
             @Override
+            
             public void onClick(View view) {
+            
                 String name = editTextName.getText().toString();
+                
                 String age = editTextAge.getText().toString();
+                
                 String email = editTextEmail.getText().toString();
+                
                 String contactNumber = editTextContactNumber.getText().toString();
+                
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                
                 intent.putExtra("name", name);
+                
                 intent.putExtra("age", age);
+                
                 intent.putExtra("email", email);
+                
                 intent.putExtra("contactNumber", contactNumber);
+                
                 startActivity(intent);
             }
+            
         });
+
+        
     }
 }
  ## MainActivity2.java:
@@ -216,9 +255,13 @@ public class MainActivity extends AppCompatActivity {
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        
         </activity>
+        
         <activity android:name=".MainActivity2" />
+    
     </application>
+    
     </manifest>
 ## Output:
 ![Screenshot 2024-10-24 103419](https://github.com/user-attachments/assets/f6229cc7-3db3-4b7d-b168-f7de44d86c6b)
